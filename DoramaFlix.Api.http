@@ -1,0 +1,29 @@
+@DoramaFlix_Api_HostAddress = http://localhost:5217
+
+GET {{DoramaFlix_Api_HostAddress}}/api/dramas
+Accept: application/json
+
+###
+
+GET {{DoramaFlix_Api_HostAddress}}/api/dramas/1
+Accept: application/json
+
+###
+
+GET {{DoramaFlix_Api_HostAddress}}/api/dramas/genre/Romance
+Accept: application/json
+
+###
+
+POST {{DoramaFlix_Api_HostAddress}}/api/dramas
+Content-Type: application/json
+
+{
+  "title": "Business Proposal",
+  "country": "South Korea",
+  "genre": "Romance",
+  "releaseYear": 2022,
+  "episodes": 12,
+  "rating": 8.1,
+  "isCompleted": true
+}
